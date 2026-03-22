@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Batch '26</title>
+    <meta name="description" content="Get in touch with the Batch '26 team. Update your details, suggest an event, or just say hi.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Batch<span>'26</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="memories.html">Memories</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="memories.html">Memories</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info fade-in">
+                    <h1>Let's <span>Connect</span></h1>
+                    <p>Update your details, suggest an event, or just say hi to the batch admins. We'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>batch26.cse@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>CSE Department, Engineering College</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Response Time</h4>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card fade-in">
+                    <form id="contactForm" novalidate>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe">
+                                <span class="error-message" id="nameError">Name is required</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="+1 234 567 8900">
+                                <span class="error-message" id="mobileError">Please enter a valid mobile number</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                            <span class="error-message" id="emailError">Please enter a valid email address</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+                            <span class="error-message" id="messageError">Message is required</span>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="terms" name="terms">
+                                <span class="checkmark"></span>
+                                <span class="terms-text">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></span>
+                            </label>
+                            <span class="error-message" id="termsError">You must agree to the terms</span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 2L11 13"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="message">
+                <span class="text text-1">Success</span>
+                <span class="text text-2">Form submitted successfully!</span>
+            </div>
+        </div>
+        <div class="progress"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="logo">Batch<span>'26</span></div>
+                <p>&copy; 2026 Engineering Batch. Built with care by the students.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="memories.html">Memories</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
