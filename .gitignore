@@ -42,3 +42,6 @@ pids
 *.njsproj
 *.sln
 *.sw?
+
+# Claude
+CLAUDE.md
