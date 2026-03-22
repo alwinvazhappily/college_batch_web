@@ -26,13 +26,7 @@ Then go to `http://localhost:8000` in your browser. This method is closer to how
 
 ### Deploying online
 
-The site is set up for **Firebase Hosting**. To deploy:
-
-```
-firebase deploy
-```
-
-You need to be logged into Firebase first (`firebase login`). The site will be live on your Firebase project URL.
+The site is hosted on **GitHub Pages**. Push your changes to the repository and GitHub Pages will automatically serve the site. No build step needed — GitHub Pages serves the static files as-is.
 
 ---
 
@@ -510,7 +504,7 @@ Open `style.css` and update two things:
 | JavaScript | Makes pages interactive | `script.js` handles menu, scroll effects, form validation |
 | Google Fonts | Free web fonts | Loads the "Outfit" font family |
 | Unsplash | Free stock photos | Placeholder images in the gallery |
-| Firebase Hosting | Web hosting service | Used to deploy the site online |
+| GitHub Pages | Free web hosting by GitHub | Used to deploy the site online |
 
 ---
 
